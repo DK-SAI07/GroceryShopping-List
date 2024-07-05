@@ -1,0 +1,89 @@
+body {
+    font-family: "Raleway";
+    font-size: 1.5em;
+    text-align: justify;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+img {
+    width: 400px;
+    padding: 20px;
+    padding-left: 100px;
+
+}
+
+label {
+    margin: 25px 5px;
+}
+
+#remove_items {
+    background-color: #5c985c;
+    color: #302B29;
+    padding: 30px;
+    background-image: url(./Green\ Mint\ Modern\ groceries\ Instagram\ Post.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 270px;
+    font-weight: bolder;
+}
+
+#add_btn {
+    background-color: #01A88A;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#remove_btn {
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px 15px;
+}
+
+select {
+    font-family: "Raleway";
+    font-size: 0.85em;
+    text-align: center;
+    width: 200px;
+    margin: 50px 10px;
+    padding: 5px 0;
+    border: 2px solid darkgrey;
+}
+
+#add_btn:hover {
+    background-color: darkslategrey;
+}
+
+body {
+	background: linear-gradient(-45deg, #42ba5f, #4ab842, #3d813b, #25a03f
+, #23d53e);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* #42ba5f
+#4ab842
+#3d813b */

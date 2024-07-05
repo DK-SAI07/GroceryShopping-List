@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grocery List</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">    
+        <link rel="icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_lP0-99y565nxApWzE5RIC7OurZ-87f6shJp0V2KL5-wzZDrFsjd15J5PxsKE2tnD4hFULA-RM5gf3E-ZM0RvmPgwHR6BG1PvBuFom-_SjgLqiCiuQvX3IB77D0V6YWPz0V4k14XQAWFNRkQVYnKbZx9vIVMT8Vx5WNRsQg4HJ7Gqobj0aU9FDqfFouI/s320/shopping-bag_2194018.png">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js')}}"></script>
+   </head>
+    <body>
+        <!-- LOGO -->
+        <div>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy_-YU04R5l2rDvRnwFJF2nsPBzk0jkGj7Set09vfFFr-YZTJC_6G43SIxToheBNsavvvVotTS0wGdI2iRqL2lZvFmq9i03eimzcZl25EdKJwAM1M5RnrLtk-2lo-sXf97ie92seXj8B4snZFNZBrtLCY0RMsuQ7DFcBq88vloq-PyoP4ELWEJupX0uQ4/s320/Untitled_design__1_-removebg-preview.png" alt="grocery app logo">
+        </div>
+
+        <!-- REMOVE ITEMS FORM -->
+        <div id="remove_items">
+            <form action="/remove_items" method="POST">
+                {% for item in shopping_items%}
+                <input type="checkbox" name="check" id="{{item}}" value="{{item}}" onchange="check_me('{{ item }}')">
+                <label for="{{items}}" name="{{item}}">{{ item }}</label><br>
+                {% endfor %}
+                <input type="submit" value="CHECK ITEMS" id="remove_btn">
+            </form>
+        </div>
+
+        <!-- ADD ITEMS FORM -->
+        <div id="add_item">
+            <form action="/add_items" method="POST">
+                <select name="select_items">
+                {% for item in all_items %}
+                <option value="{{ item }}">{{ item }}</option>
+                {% endfor %}                
+                <input type="submit" value="ADD ITEM" id="add_btn">     
+            </form>
+        </div>
+        <div class="d-flex flex-column justify-content-center w-100 h-100">
+
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="btn-group my-5">
+                    <a href="https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/pyBNzX/1578778289271/pure-css-gradient-background-animation.zip" class="btn btn-outline-light" aria-current="page"><i class="fas fa-file-download me-2"></i></a>
+                   
+                </div>
+                <a href="https://manuel.pinto.dev" class="text-decoration-none">
+                </a>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
