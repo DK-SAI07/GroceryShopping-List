@@ -79,7 +79,7 @@ The frontend is implemented using HTML, CSS, and JavaScript, providing a user-fr
 
 ---
 
-## Conclusion
+## 💼 Conclusion
 The Grocery Store Checklist application effectively combines a powerful backend with an interactive frontend to provide a seamless and efficient grocery shopping experience. It leverages Flask and SQLite for robust data management and session handling, while HTML, CSS, and JavaScript ensure a dynamic and user-friendly interface. This project serves as a practical tool for users to manage their grocery shopping lists easily and efficiently.
 
 This was CS50x.
@@ -153,7 +153,7 @@ GroceryShopping-List/
 
 ---
 
-## 🙋 Acknowledgements
+## 👨🏻‍💻 Acknowledgements
 
 - Developed as part of the [CS50x](https://cs50.harvard.edu/x/) Final Project.
 - Thanks to HarvardX, CS50 team & David J. Malan for the incredible course and community!
